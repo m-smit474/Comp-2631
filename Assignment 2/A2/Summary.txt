@@ -1,0 +1,26 @@
+Matt Smith
+Assignment 2 Summary 
+
+For my test I ran each file 3 times to get an average time, the following are the results:
+
+
+Accounts 	Sorted Array	Hash Table
+
+20 		3412ms		1481ms
+
+200 		3369ms		1505ms
+
+2,000		4057ms		1691ms
+
+20,000		7541ms		1362ms
+
+
+	In every case the Sorted Array is slower. The hash table is over twice as fast in every case
+and the gap is only increasing as the number of accounts grow. I expected them to have similar
+speeds because the Sorted Array is using binary search. I thought this would keep up with the 
+hash technique. They also both have to go through each element linearly to resize so no advantage
+there. The Sorted Array seems to be taking an expentially longer time as the number of accounts
+increase so I predict that with a database of 2 million accounts the Sorted Array would take around
+10 times as long as the Hash Table which seems to be pretty consistent as database size increases.
+
+So with a larger database the Hash Table becomes significantly faster. 
